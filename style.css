@@ -304,10 +304,22 @@ body, html {
     .pageLocation {
         font-size: 1.1rem;
     }
+    .contentPhase .siteInfoContainer {
+        padding-left: unset;
+    }
 }
 
 @media screen and (max-width: 300px) {
     .contentPhase img {
         height: 128px;
     }
+}
+
+.secondSlide.blueBG {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.unorderedList {
+    padding-left: 0;
 }
