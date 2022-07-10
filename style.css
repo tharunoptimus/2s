@@ -1,6 +1,7 @@
 :root {
     --black: #000000;
     --white: #FFFFFF;
+    --yellow: #ffc93a;
 }
 
 @font-face {
@@ -77,6 +78,31 @@ body, html {
     font-size: 4rem;
 }
 
+.firstSlide .slideContent .descriptorFlashLine {
+    font-size: 2rem;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.blueBG {
+    background-color: #0070f3;
+}
+
+.section {
+    position: absolute;
+    bottom: 0;
+    margin-top: 3rem;
+    min-height: 100px;
+    width: 100%;
+}
+
+.blackToBlue {
+    background: url(/blackToBlue.svg) no-repeat center center;
+    background-size: cover;
+}
+
 @media screen and (max-width: 480px) {
     .firstSlide .slideContent {
         padding-top: 5rem;
@@ -88,5 +114,9 @@ body, html {
     
     .firstSlide .slideContent .smallFlashLine {
         font-size: 2rem;
+    }
+    
+    .firstSlide .slideContent .descriptorFlashLine {
+        font-size: 1.2rem;
     }
 }
