@@ -74,11 +74,17 @@ body, html {
 }
 
 
-.firstSlide .slideContent .flashLine,
-.secondSlide .slideContent .flashLine {
+.firstSlide .slideContent .flashLine{
     font-size: 4rem;
     padding-bottom: 4rem;
     align-items: center;
+}
+
+.secondSlide .slideContent .flashLine {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    align-items: center;
+
 }
 
 .firstSlide .slideContent .smallFlashLine,
@@ -90,6 +96,15 @@ body, html {
 .secondSlide .slideContent .descriptorFlashLine {
     font-size: 2rem;
 }
+
+@media screen and (min-width: 1200px) {
+    .firstSlide .slideContent .smallFlashLine,
+    .secondSlide .slideContent .smallFlashLine {
+        font-size: 3.5rem;
+    }
+    
+}
+
 
 .black {
     color: var(--black);
