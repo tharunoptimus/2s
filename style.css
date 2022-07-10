@@ -2,6 +2,11 @@
     --black: #000000;
     --white: #FFFFFF;
     --yellow: #ffc93a;
+    --blue: #0070f3;
+    --blueHover: #0066db;
+    --backgroundRed: #f44336;
+    --backgroundRedHover: #f32a1b;
+    --boxShadowBlack: #44444444;
 }
 
 @font-face {
@@ -53,7 +58,8 @@ body, html {
     .topBar { left: unset; }
 }
 
-.firstSlide .slideContent {
+.firstSlide .slideContent,
+.secondSlide .slideContent {
     padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -68,22 +74,29 @@ body, html {
 }
 
 
-.firstSlide .slideContent .flashLine {
-    font-size: 5rem;
+.firstSlide .slideContent .flashLine,
+.secondSlide .slideContent .flashLine {
+    font-size: 4rem;
     padding-bottom: 4rem;
     align-items: center;
 }
 
-.firstSlide .slideContent .smallFlashLine {
-    font-size: 4rem;
+.firstSlide .slideContent .smallFlashLine,
+.secondSlide .slideContent .smallFlashLine {
+    font-size: 3rem;
 }
 
-.firstSlide .slideContent .descriptorFlashLine {
+.firstSlide .slideContent .descriptorFlashLine,
+.secondSlide .slideContent .descriptorFlashLine {
     font-size: 2rem;
 }
 
 .black {
     color: var(--black);
+}
+
+.blue {
+    color: var(--blue);
 }
 
 .blueBG {
@@ -108,20 +121,193 @@ body, html {
     background-size: cover;
 }
 
+.whiteToBlue {
+    background: url(/whiteToBlue.svg) no-repeat center center;
+    background-size: cover;
+}
+
+
 @media screen and (max-width: 480px) {
-    .firstSlide .slideContent {
-        padding-top: 5rem;
+    .paddingTop5RMo {
+        padding-top: 3rem;
     }
-    .firstSlide .slideContent .flashLine {
-        font-size: 3rem;
-        padding-bottom: 2rem;
-    }
-    
-    .firstSlide .slideContent .smallFlashLine {
-        font-size: 2rem;
+    .firstSlide .slideContent .flashLine,
+    .secondSlide .slideContent .flashLine {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
     }
     
-    .firstSlide .slideContent .descriptorFlashLine {
+    .firstSlide .slideContent .smallFlashLine,
+    .secondSlide .slideContent .smallFlashLine {
+        font-size: 1.8rem;
+    }
+    
+    .firstSlide .slideContent .descriptorFlashLine,
+    .secondSlide .slideContent .descriptorFlashLine {
+        font-size: 1.3rem;
+    }
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.secondSlide {
+    background-color: var(--white);
+    min-height: 100vh;
+    position: relative;
+}
+
+.sitesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentPhase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentPhase img {
+    width: auto;
+    border-radius: 9px;
+    box-shadow: 4px 4px 13px 1px var(--boxShadowBlack);
+}
+
+.contentPhase .siteInfoContainer {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+.controlPhase {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.controlPhase button {
+    padding: 0.5em 1.2em;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+
+    .controlPhase {
+        padding-top: 0.8rem;
+    }
+    .controlPhase button {
+        font-size: 1.1rem;
+    }
+}
+
+.controlPhase button:active {
+    transform: translateY(3px);
+    transition: transform 0.1s linear;
+}
+
+.prevButton {
+    background-color: var(--backgroundRed);
+}
+
+.nextButton {
+    background-color: var(--blue);
+}
+
+.prevButton:hover {
+    background-color: var(--backgroundRedHover);
+}
+
+.nextButton:hover {
+    background-color: var(--blueHover);
+}
+
+.pageSpeed, .pageType, .pageLocation {
+    padding-bottom: 0.5rem;
+}
+
+.pageSpeed {
+    font-size: 3rem;
+}
+
+.pageType {
+    font-size: 2.2rem;
+}
+
+.pageLocation {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.8rem;
+}
+
+@media screen and ( min-height: 1000px ) { 
+    .contentPhase img {
+        height: 350px;
+    }
+    .contentPhase {
+        flex-direction: column;
+    }
+    .siteInfoContainer {
+        padding-top: 0.5rem;
+    }
+    .pageSpeed, .pageType, .pageLocation {
+        text-align: center;
+    }
+}
+
+@media screen and ( min-height: 1100px ) { 
+    .contentPhase img {
+        height: 500px;
+    }
+}
+
+@media screen and ( min-height: 1300px ) { 
+    .contentPhase img {
+        height: 600px;
+    }
+    .siteInfoContainer {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentPhase img {
+        height: 230px;
+    }
+    .contentPhase {
+        flex-direction: column;
+    }
+    .siteInfoContainer {
+        padding-top: 0.5rem;
+    }
+    .pageSpeed, .pageType, .pageLocation {
+        text-align: center;
+    }
+    .pageSpeed {
+        font-size: 1.4rem;
+    }
+
+    .pageType {
         font-size: 1.2rem;
+    }
+
+    .pageLocation {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .contentPhase img {
+        height: 128px;
     }
 }
