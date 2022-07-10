@@ -1,0 +1,92 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(/regular.woff2) format("woff2");
+    font-display: 500;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: "Bold";
+	src: url("/bold.woff2") format("woff2");
+    font-weight: 700;
+	font-display: swap;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Regular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstSlide {
+    position: relative;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--white);
+}
+
+.topBar {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .topBar { left: unset; }
+}
+
+.firstSlide .slideContent {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.actualLine {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.firstSlide .slideContent .flashLine {
+    font-size: 5rem;
+    padding-bottom: 4rem;
+    align-items: center;
+}
+
+.firstSlide .slideContent .smallFlashLine {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+    .firstSlide .slideContent {
+        padding-top: 5rem;
+    }
+    .firstSlide .slideContent .flashLine {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .firstSlide .slideContent .smallFlashLine {
+        font-size: 2rem;
+    }
+}
