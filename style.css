@@ -404,7 +404,7 @@ body, html {
     border-radius: 14px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .secondSlide.purpleBG .slideContent,
     .secondSlide.blackBG .slideContent  {
         flex-direction: column;
@@ -461,7 +461,7 @@ body, html {
     align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .contactLogos img {
         height: 60px;
         width: 60px;
