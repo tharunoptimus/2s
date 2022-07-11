@@ -372,9 +372,15 @@ body, html {
     color: var(--white);
 }
 
-.secondSlide.purpleBG .slideContent {
+.secondSlide.blackBG {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.secondSlide.purpleBG .slideContent,
+.secondSlide.blackBG .slideContent  {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
 }
@@ -392,13 +398,16 @@ body, html {
 }
 
 @media screen and (max-width: 400px) {
-    .secondSlide.purpleBG .slideContent {
+    .secondSlide.purpleBG .slideContent,
+    .secondSlide.blackBG .slideContent  {
         flex-direction: column;
     }
     .aboutLeft img {
         height: 120px;
         width: 120px;
-    
+    }
+    .whyLeft {
+        padding-right: unset;
     }
     .aboutLeft {
         padding-right: unset;
@@ -421,4 +430,17 @@ body, html {
 
 .contactUsButton:hover {
     background-color: rgba(0, 0, 0, 0.462);
+}
+
+.whyLeft {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and ( min-height: 1000px ) { 
+    .secondSlide.blackBG .slideContent  {
+        flex-direction: column;
+    }
 }
