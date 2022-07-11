@@ -3,6 +3,7 @@
     --white: #FFFFFF;
     --yellow: #ffc93a;
     --blue: #0070f3;
+    --purple: #743ad5;
     --blueHover: #0066db;
     --backgroundRed: #f44336;
     --backgroundRedHover: #f32a1b;
@@ -126,7 +127,11 @@ body, html {
 }
 
 .blueBG {
-    background-color: #0070f3;
+    background-color: var(--blue);
+}
+
+.purpleBG {
+    background-color: var(--purple);
 }
 
 .section {
@@ -149,6 +154,16 @@ body, html {
 
 .whiteToBlue {
     background: url(/whiteToBlue.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.whiteToPurple {
+    background: url(/whiteToPurple.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.purpleToBlack {
+    background: url(/purpleToBlack.svg) no-repeat center center;
     background-size: cover;
 }
 
@@ -352,6 +367,58 @@ body, html {
     color: var(--white);
 }
 
+.secondSlide.purpleBG {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.secondSlide.purpleBG .slideContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .unorderedList {
     padding-left: 0;
+}
+
+.aboutLeft {
+    padding-right: 3rem;
+}
+
+.aboutLeft img {
+    border-radius: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    .secondSlide.purpleBG .slideContent {
+        flex-direction: column;
+    }
+    .aboutLeft img {
+        height: 120px;
+        width: 120px;
+    
+    }
+    .aboutLeft {
+        padding-right: unset;
+    }
+    .center {
+        text-align: center;
+    }
+}
+
+.contactUsButton {
+    background-color: var(--black);
+    padding: 0.4em 1.2em;
+    border: 0;
+    border-radius: 9px;
+    color: var(--white);
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.contactUsButton:hover {
+    background-color: rgba(0, 0, 0, 0.462);
 }
