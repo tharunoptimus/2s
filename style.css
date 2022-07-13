@@ -7,6 +7,7 @@
     --blue: #0070f3;
     --gray: #f5f5f7;
     --purple: #743ad5;
+    --purpleHover: #672cce;
     --blueHover: #0066db;
     --backgroundRed: #f44336;
     --backgroundRedHover: #f32a1b;
@@ -296,7 +297,7 @@ span.extraSpace {
 }
 
 .prevButton {
-    background-color: var(--backgroundRed);
+    background-color: var(--purple);
 }
 
 .nextButton {
@@ -304,7 +305,7 @@ span.extraSpace {
 }
 
 .prevButton:hover {
-    background-color: var(--backgroundRedHover);
+    background-color: var(--purpleHover);
 }
 
 .nextButton:hover {
