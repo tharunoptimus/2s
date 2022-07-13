@@ -93,15 +93,25 @@ body, html {
     font-size: 2rem;
 }
 
+.firstSlide .slideContent .smallerFlashLine,
+.secondSlide .slideContent .smallerFlashLine {
+    font-size: 1.9rem;
+}
+
 .firstSlide .slideContent .descriptorFlashLine,
 .secondSlide .slideContent .descriptorFlashLine {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 @media screen and (min-width: 1200px) {
     .firstSlide .slideContent .smallFlashLine,
     .secondSlide .slideContent .smallFlashLine {
         font-size: 3rem;
+    }
+    
+    .firstSlide .slideContent .smallerFlashLine,
+    .secondSlide .slideContent .smallerFlashLine {
+        font-size: 2.5rem;
     }
     
 }
@@ -181,6 +191,11 @@ body, html {
     
     .firstSlide .slideContent .smallFlashLine,
     .secondSlide .slideContent .smallFlashLine {
+        font-size: 1.8rem;
+    }
+    
+    .firstSlide .slideContent .smallerFlashLine,
+    .secondSlide .slideContent .smallerFlashLine {
         font-size: 1.8rem;
     }
     
@@ -394,6 +409,7 @@ body, html {
 
 .unorderedList {
     padding-left: 0;
+    margin: 0;
 }
 
 .aboutLeft {
