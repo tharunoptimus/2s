@@ -1,5 +1,4 @@
 const CACHE = "content-v1" // name of the current cache
-const AVATARS = "avatars"
 const OFFLINE = "/offline"
 
 const AUTO_CACHE = [
