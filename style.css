@@ -72,6 +72,11 @@ span.extraSpace {
     .topBar { left: unset; }
 }
 
+.introLine {
+    display: inline;
+    padding-bottom: 4rem;
+}
+
 .firstSlide .slideContent,
 .secondSlide .slideContent {
     padding-top: 0.5rem;
