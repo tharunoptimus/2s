@@ -81,7 +81,7 @@
                         <li>Beat your competitors with the <span class="black">lowest</span> bounce rate*</li>
                         <li>Customers viewing your page save <span class="black">real money</span></li>
                         <li><span class="black">Lifetime</span> Support* </li>
-                        <li><span class="black">#call</span> us to know more...</li>
+                        <li><span class="black">Call</span> us to know more...</li>
                     </ul>
                 </span>
                 <span class="extraSpace"></span>
@@ -184,22 +184,7 @@
         </div>
 
     </div>
-    <script defer>
-        function stat(e){let t=` <div class="materialStatus"><span>${e}</span></div>`;t=(new DOMParser).parseFromString(t,"text/html"),t=t.querySelector("div.materialStatus"),document.body.appendChild(t),setTimeout(()=>{t.style.animation="closeMaterialStatus 0.2s linear 5s 1 forwards"},5e3)}let qs=e=>document.querySelector(e),pages=[{src:"/pages/paint.webp",speed:1.2,type:"Landing Page",location:"https://newpaint.netlify.app",name:"Paint"},{src:"/pages/blog.webp",speed:1.6,type:"Blog",location:"https://thatblog.netlify.app",name:"That Blog"},{src:"/pages/fire.webp",speed:1.7,type:"Brand Page",location:"https://fireoauth.netlify.app",name:"Fire OAuth"},{src:"/pages/cool.webp",speed:.8,type:"Code Generator",location:"https://coolsw.pages.dev",name:"Cool SW"},{src:"/pages/idly.webp",speed:1.4,type:"Landing Page",location:"https://idly1.netlify.app",name:"Idly"},{src:"/pages/privacy.webp",speed:1.1,type:"Brand Page",location:"https://privacydefenders.pages.dev",name:"Privacy Defenders"},{src:"/pages/infant.webp",speed:.9,type:"Landing Page",location:"https://infant.pages.dev",name:"Infant Lang"}],fa=e=>{let t="",a=pages[e-1];return t+=`<div class="contentPhase">\n<div class="siteImageContainer">\n<img src="${a.src}" alt="${a.name}" height="400" width="556">\n</div>\n<div class="siteInfoContainer">\n<span class="pageSpeed">⚡${a.speed}s</span>\n<span class="pageType">${a.type}</span>\n<a class="pageLocation" rel="noopener noreferrer" href="${a.location}">Link ⛳</a>\n<div class="controlPhase">\n<button type="button" class="prevButton" data-prev="${e}" aria-label="prev">Previous</button>\n<button type="button" class="nextButton" data-prev="${e}" aria-label="next">Next</button>\n</div>\n</div>\n</div>`,t};document.addEventListener("click",e=>{let t=e.target;if(t.classList.contains("prevButton")||t.classList.contains("nextButton")){let a=t.dataset.prev,n=a;t.classList.contains("prevButton")?n--:n++,n<=0&&(n=pages.length),n>pages.length&&(n=1);let s=fa(n);qs(".sitesContainer").innerHTML=s,e.stopPropagation()}}),qs(".rightsReserved").textContent=`All Rights Reserved © ${(new Date).getFullYear()} by <2 Seconds`;
-    </script>
-    <script defer>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((reg) => {
-                        console.debug('Success: ', reg.scope)
-                        if(localStorage.getItem("offline") != null) return
-                        localStorage.setItem("offline", "true")
-                        stat("This page can now run offline!")
-                    })
-                    .catch((err) => console.debug('Failure: ', err))
-            })
-        }
-    </script>
+    <script defer src="/app.js"></script>
+    <script defer src="/stuff.js"></script>
 </body>
 </html>
