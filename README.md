@@ -24,3 +24,5 @@ All pages load in less than 2 seconds on all devices consistently
 This Project uses HTML5, CSS3 and Vannila JS and some WebP Images and SVGs. Hosted on Cloudflare Pages
 
 PS: This page loads fully with a speed index of **0.4** seconds and takes **0.3** seconds to interact.
+
+The screenshots were taken with the Dev Tools with screen width 1128px x 753.60px
