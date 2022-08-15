@@ -611,6 +611,10 @@ span.extraSpace {
     }
 }
 
+.proton {
+    padding: 0 0.5em;
+}
+
 .asterisk {
     padding-left: 0;
     font-size: 0.75rem;

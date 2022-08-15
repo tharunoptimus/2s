@@ -80,6 +80,8 @@ document.addEventListener("click", (e) => {
 			n > pages.length && (n = 1)
 		let s = fa(n)
 		;(qs(".sitesContainer").innerHTML = s), e.stopPropagation()
+	} else if (t.classList.contains("contactUsButton")) {
+		qs(".goodThingsHappen").scrollIntoView({ behavior: "smooth" })
 	}
 }),
 	(qs(

@@ -4,10 +4,10 @@ const OFFLINE = "/offline"
 const AUTO_CACHE = [
     OFFLINE,
     "/",
-    "/icons/facebook.svg",
+    "/icons/gmail.svg",
     "/icons/instagram.svg",
     "/icons/github.svg",
-    "/icons/outlook.svg",
+    "/icons/protonmail.svg",
     "/pages/blog.webp",
     "/pages/cool.webp",
     "/pages/fire.webp",
