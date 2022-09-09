@@ -14,6 +14,7 @@ const AUTO_CACHE = [
     "/pages/idly.webp",
     "/pages/paint.webp",
     "/pages/privacy.webp",
+    "/pages/infant.webp",
     "/fullLogo.webp",
     "/lightning.webp",
     "/logo.webp",
