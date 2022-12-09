@@ -10,11 +10,25 @@ function stat(e) {
 let qs = (e) => document.querySelector(e),
 	pages = [
 		{
+			src: "/pages/privacy.webp",
+			speed: 1.1,
+			type: "Brand Page",
+			location: "https://privacydefenders.pages.dev",
+			name: "Privacy Defenders",
+		},
+		{
 			src: "/pages/paint.webp",
 			speed: 1.2,
 			type: "Landing Page",
 			location: "https://newpaint.netlify.app",
 			name: "Paint",
+		},
+		{
+			src: "/pages/infant.webp",
+			speed: 0.9,
+			type: "Landing Page",
+			location: "https://infant.pages.dev",
+			name: "Infant Lang",
 		},
 		{
 			src: "/pages/blog.webp",
@@ -43,21 +57,7 @@ let qs = (e) => document.querySelector(e),
 			type: "Landing Page",
 			location: "https://idly1.netlify.app",
 			name: "Idly",
-		},
-		{
-			src: "/pages/privacy.webp",
-			speed: 1.1,
-			type: "Brand Page",
-			location: "https://privacydefenders.pages.dev",
-			name: "Privacy Defenders",
-		},
-		{
-			src: "/pages/infant.webp",
-			speed: 0.9,
-			type: "Landing Page",
-			location: "https://infant.pages.dev",
-			name: "Infant Lang",
-		},
+		}
 	],
 	fa = (e) => {
 		let t = "",
